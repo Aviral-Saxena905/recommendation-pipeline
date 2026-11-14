@@ -14,12 +14,6 @@ venv/
 *.pem
 *.key
 
-# Raw and generated datasets
-data/raw/
-data/processed/
-data/features/
-data/errors/
-
 # Saved models and pipeline artifacts
 models/*.pkl
 pipeline_runs/
