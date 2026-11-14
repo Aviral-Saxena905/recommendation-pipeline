@@ -259,7 +259,7 @@ The project was developed in Google Colab.
 
 Clone the repository:
 
-    git clone <your-repository-url>
+    git clone https://github.com/Aviral-Saxena905/recommendation-pipeline.git
 
 Navigate to the project directory:
 
