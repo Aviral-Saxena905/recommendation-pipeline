@@ -281,6 +281,16 @@ For Airflow 3.4.0 with Python 3.13, an example is:
 
 The MovieLens CSV datasets must be placed in data/raw/.
 
+### Preparing the Input Datasets
+
+1. Download MovieLens Latest Small from https://grouplens.org/datasets/movielens/latest/.
+2. Extract 'movies.csv', 'ratings.csv', 'tags.csv' and 'links.csv' into 'data/raw/.
+3. Run the synthetic-user generation step in 'notebooks/01_Data_Ingestion.ipynb' to create 'data/raw/users.csv'.
+4. Run 'python pipeline_execution.py --full-run' to train the models and generate the pipeline outputs.
+5. Run the Airflow DAG after the full pipeline has generated the saved models and evaluation results.
+   
+Raw datasets, generated features, and trained model binaries are intentionally excluded from the GitHub repository.
+
 The Airflow DAG currently uses a Google Colab-specific
 project path. Update PROJECT_DIR when running elsewhere.
 
