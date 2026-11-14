@@ -339,6 +339,8 @@ The repository includes or documents:
 - Successful orchestration execution evidence
 - Architecture diagram
 - Google Colab notebooks
+- Final 3-page assignment report:
+  [2025AG05387_DM4ML_Assignment_2_Final_Report.pdf](reports/2025AG05387_DM4ML_Assignment_2_Final_Report.pdf)
 
 ## 18. Limitations
 
