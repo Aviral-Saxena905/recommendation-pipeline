@@ -1,0 +1,3 @@
+schema_context,column,check,check_number,failure_case,index
+Column,rating,"in_range(0.5, 5.0)",0,6.0,0
+Column,rating,"in_range(0.5, 5.0)",0,-1.0,1
