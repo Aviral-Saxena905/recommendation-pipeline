@@ -1,0 +1,15 @@
+{
+    "dag_id": "movielens_recommendation_pipeline",
+    "execution_mode": "dry_run",
+    "status": "success",
+    "exit_code": 0,
+    "tasks": [
+        "check_project_files",
+        "run_recommendation_pipeline",
+        "verify_pipeline_outputs"
+    ],
+    "successful_tasks": 3,
+    "run_duration_seconds": 29.906351,
+    "mlflow_run_id": "ed9b2bc54cbd4b219e955b66160fbdbe",
+    "dag_run_id": "manual__2026-11-14T05:55:43.658022+00:00"
+}

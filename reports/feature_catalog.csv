@@ -1,0 +1,15 @@
+Feature Category,Feature Name,Data Type,Description,Purpose
+User,userId,int64,Unique identifier for a user,Identify users and join user-related datasets
+User,user_avg_rating,float64,Average rating given by a user,Summarize user rating behavior
+User,user_activity_count,int64,Number of ratings submitted by a user,Measure user engagement
+Item,movieId,int64,Unique identifier for a movie,Identify movies and join item-related datasets
+Item,item_avg_rating,float64,Average rating received by a movie,Summarize movie rating performance
+Item,item_popularity,int64,Number of ratings received by a movie,Measure movie popularity
+Item,unique_user_count,int64,Number of distinct users who rated a movie,Measure the breadth of movie engagement
+Interaction,userId,int64,Unique identifier for a user,Identify users and join user-related datasets
+Interaction,movieId,int64,Unique identifier for a movie,Identify movies and join item-related datasets
+Interaction,rating,float64,Rating given by a user to a movie,Represent explicit user-item feedback
+Interaction,timestamp,int64,Original interaction timestamp in Unix seconds,Support chronological analysis and splitting
+Interaction,year,int32,Calendar year extracted from the interaction timestamp,Support time-based analysis
+Interaction,month,int32,Calendar month extracted from the interaction timestamp,Support monthly interaction analysis
+Interaction,day,int32,Day of the month extracted from the interaction timestamp,Support daily interaction analysis

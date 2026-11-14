@@ -1,0 +1,53 @@
+project:
+  name: Movie Recommendation Pipeline
+  version: '1.0'
+  random_seed: 42
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  features_dir: data/features
+  errors_dir: data/errors
+  ratings_file: ratings.csv
+  movies_file: movies.csv
+  users_file: users.csv
+  tags_file: tags.csv
+validation:
+  rating_min: 0.5
+  rating_max: 5.0
+  allow_missing_values: false
+  check_duplicates: true
+preparation:
+  test_size: 0.2
+  split_method: time_based
+features:
+  user_features:
+  - user_avg_rating
+  - user_activity_count
+  item_features:
+  - item_avg_rating
+  - item_popularity
+models:
+  popularity:
+    min_ratings: 5
+  svd:
+    n_factors: 50
+    n_epochs: 20
+    lr_all: 0.005
+    reg_all: 0.02
+    random_state: 42
+evaluation:
+  k: 10
+  metrics:
+  - Precision@10
+  - Recall@10
+  - NDCG@10
+  - Coverage
+  - Diversity
+  - RMSE
+  - MAE
+storage:
+  formats:
+  - csv
+  - parquet
+mlflow:
+  experiment_name: Movie_Recommendation_Experiments

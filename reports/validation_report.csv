@@ -1,0 +1,6 @@
+Dataset,Status,Rows
+Ratings,PASSED,100836
+Users,PASSED,610
+Movies,PASSED,9742
+Tags,PASSED,3683
+Links,PASSED,9742
