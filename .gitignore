@@ -1,0 +1,35 @@
+
+# Python cache and temporary files
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Virtual environments and credentials
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Raw and generated datasets
+data/raw/
+data/processed/
+data/features/
+data/errors/
+
+# Saved models and pipeline artifacts
+models/*.pkl
+pipeline_runs/
+
+# MLflow tracking files
+mlflow.db
+mlruns/
+mlartifacts/
+
+# Runtime logs and temporary backups
+*.log
+*.backup
+*.before_*
